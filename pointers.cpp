@@ -18,6 +18,7 @@ int main(int argc, char **argv){
     Student student;
     double average;
     student.f_name= new char[128];
+    student.l_name= new char[128];
     
     std::cout<<"Please enter the students ID number: ";
     std:: cin>>student.id;    
