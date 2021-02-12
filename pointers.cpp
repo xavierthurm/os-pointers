@@ -17,6 +17,7 @@ typedef struct Student {
 int main(int argc, char **argv){
     Student student;
     double average;
+    student.f_name= new char[128];
     
     std::cout<<"Please enter the students ID number: ";
     std:: cin>>student.id;    
@@ -38,7 +39,7 @@ int main(int argc, char **argv){
  
     // Call `CalculateStudentAverage(???, ???)`
     double *averge=0;
-    //calculateStudentAverage(assignments,&average);
+    calculateStudentAverage(assignments,&average);
     // Output `average`
     std:: cout<< average;
 
@@ -53,6 +54,7 @@ int main(int argc, char **argv){
 int promptInt(std::string message, int min, int max)
 {
     // Code to prompt user for an int
+    std::cout<<message;
     return min;
 }
 
