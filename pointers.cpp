@@ -22,6 +22,7 @@ int main(int argc, char **argv){
     
     std::cout<<"Please enter the students ID number: ";
     std:: cin>>student.id;    
+    std::cin.ignore();
     std::cout<<"\nPlease enter the students first name: ";
     std:: cin.getline( student.f_name, 128);
     std::cout<<"\nPlease enter the students last name: ";
